@@ -1,0 +1,32 @@
+//
+//  20160331BuDeJie.pch
+//  20160331BuDeJie
+//
+//  Created by Hahn on 16/4/3.
+//  Copyright © 2016年 Hahn. All rights reserved.
+//
+#import "UIBarButtonItem+Item.h"
+#import "UIView+Frame.h"
+#import "XMGConst.h"
+#import "YYWebImage.h"
+#import "UIImageView+Download.h"
+
+#define iphone6P (XMGScreenH == 736)
+#define iphone6 (XMGScreenH == 667)
+#define iphone5 (XMGScreenH == 568)
+#define iphone4 (XMGScreenH == 480)
+#define XMGScreenH [UIScreen mainScreen].bounds.size.height
+#define XMGScreenW [UIScreen mainScreen].bounds.size.width
+
+
+#define XMGColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1]
+#define XMGRandomColor XMGColor(arc4random_uniform(255), arc4random_uniform(255), arc4random_uniform(255))
+
+
+#define XMGFunc XMGLog(@"%s", __func__)
+
+#define XMGLog(...) NSLog(__VA_ARGS__);
+
+//#define XMGTabBarButtonDidRepeatClickNotification @"XMGTabBarButtonDidRepeatClickNotification"
+
+

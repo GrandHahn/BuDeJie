@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="XMGTopicPictureView">
+            <rect key="frame" x="0.0" y="0.0" width="317" height="232"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mhp-pT-UnD" customClass="YYAnimatedImageView">
+                    <rect key="frame" x="0.0" y="0.0" width="317" height="232"/>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="common-gif" translatesAutoresizingMaskIntoConstraints="NO" id="hLa-UE-Utp">
+                    <rect key="frame" x="0.0" y="0.0" width="31" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="31" id="0JD-yH-xea"/>
+                        <constraint firstAttribute="height" constant="31" id="ibk-6f-0fH"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EEf-kV-qVT">
+                    <rect key="frame" x="0.0" y="189" width="317" height="43"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="43" id="239-Xc-Vj6"/>
+                    </constraints>
+                    <state key="normal" title="点击查看大图" image="see-big-picture" backgroundImage="see-big-picture-background"/>
+                    <connections>
+                        <action selector="seeBigPictureBtnClick:" destination="iN0-l3-epB" eventType="touchUpInside" id="Ddo-6B-dOq"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="EEf-kV-qVT" secondAttribute="bottom" id="0au-LX-G0J"/>
+                <constraint firstAttribute="trailing" secondItem="Mhp-pT-UnD" secondAttribute="trailing" id="Jrf-AN-5jt"/>
+                <constraint firstAttribute="bottom" secondItem="Mhp-pT-UnD" secondAttribute="bottom" id="OQq-NC-BuA"/>
+                <constraint firstAttribute="trailing" secondItem="EEf-kV-qVT" secondAttribute="trailing" id="a9Z-KO-yhc"/>
+                <constraint firstItem="hLa-UE-Utp" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="deV-yA-hKz"/>
+                <constraint firstItem="Mhp-pT-UnD" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="eIb-Yv-d23"/>
+                <constraint firstItem="EEf-kV-qVT" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="kiM-aY-XNb"/>
+                <constraint firstItem="hLa-UE-Utp" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="m8c-GZ-wfV"/>
+                <constraint firstItem="Mhp-pT-UnD" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="x1A-5k-JYi"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="gifView" destination="hLa-UE-Utp" id="ySz-5k-MW3"/>
+                <outlet property="pictureImageView" destination="Mhp-pT-UnD" id="SDC-Qu-fJR"/>
+                <outlet property="seeBigPictureButton" destination="EEf-kV-qVT" id="Sgl-6m-qJ0"/>
+            </connections>
+            <point key="canvasLocation" x="261.5" y="-223"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common-gif" width="31" height="31"/>
+        <image name="see-big-picture" width="19" height="19"/>
+        <image name="see-big-picture-background" width="285" height="43"/>
+    </resources>
+</document>

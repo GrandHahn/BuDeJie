@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="XMGCommentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="73"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNW-9g-pyu">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="40" id="3xo-S0-jsM"/>
+                            <constraint firstAttribute="height" constant="40" id="ifL-ZH-qMn"/>
+                        </constraints>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Action_Female" translatesAutoresizingMaskIntoConstraints="NO" id="PlQ-zw-HE1">
+                        <rect key="frame" x="60" y="10" width="17" height="17"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="17" id="bqD-0K-SCx"/>
+                            <constraint firstAttribute="width" constant="17" id="sai-fg-ffP"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PFa-q8-mWi" customClass="KILabel">
+                        <rect key="frame" x="60" y="32" width="220" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Tc-QD-A7h">
+                        <rect key="frame" x="290" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="20" id="LON-5u-BM8"/>
+                            <constraint firstAttribute="height" constant="20" id="tmS-jK-4CO"/>
+                        </constraints>
+                        <state key="normal" image="mainCellDing"/>
+                        <state key="selected" image="mainCellDingClick"/>
+                        <connections>
+                            <action selector="dingBtnClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="oc5-8g-inE"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CL1-ua-Zx8">
+                        <rect key="frame" x="290" y="39" width="21" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="用户名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8nP-Dn-bbh">
+                        <rect key="frame" x="87" y="10" width="42" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PFa-q8-mWi" secondAttribute="trailing" constant="40" id="3H9-6w-Rmw"/>
+                    <constraint firstItem="CL1-ua-Zx8" firstAttribute="leading" secondItem="PFa-q8-mWi" secondAttribute="trailing" constant="10" id="BTp-EW-yFP"/>
+                    <constraint firstItem="PlQ-zw-HE1" firstAttribute="leading" secondItem="YNW-9g-pyu" secondAttribute="trailing" constant="10" id="Fij-mG-2HV"/>
+                    <constraint firstItem="PFa-q8-mWi" firstAttribute="top" secondItem="PlQ-zw-HE1" secondAttribute="bottom" constant="5" id="IzS-L2-Ye0"/>
+                    <constraint firstItem="CL1-ua-Zx8" firstAttribute="centerX" secondItem="8Tc-QD-A7h" secondAttribute="centerX" id="MeO-F7-35Q"/>
+                    <constraint firstItem="PFa-q8-mWi" firstAttribute="leading" secondItem="PlQ-zw-HE1" secondAttribute="leading" id="Pqc-Dj-I2f"/>
+                    <constraint firstItem="CL1-ua-Zx8" firstAttribute="top" secondItem="8Tc-QD-A7h" secondAttribute="bottom" constant="9" id="RY9-QN-c37"/>
+                    <constraint firstAttribute="trailing" secondItem="8Tc-QD-A7h" secondAttribute="trailing" constant="10" id="V0m-LA-ZiV"/>
+                    <constraint firstItem="YNW-9g-pyu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="dag-U9-S40"/>
+                    <constraint firstItem="PFa-q8-mWi" firstAttribute="top" secondItem="8nP-Dn-bbh" secondAttribute="bottom" constant="10" id="edC-YU-zDY"/>
+                    <constraint firstItem="8nP-Dn-bbh" firstAttribute="leading" secondItem="PlQ-zw-HE1" secondAttribute="trailing" constant="10" id="ejQ-Eb-6q0"/>
+                    <constraint firstItem="8Tc-QD-A7h" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="gIC-1d-ho3"/>
+                    <constraint firstItem="8nP-Dn-bbh" firstAttribute="top" secondItem="PlQ-zw-HE1" secondAttribute="top" id="lKY-04-LYW"/>
+                    <constraint firstItem="YNW-9g-pyu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="lyK-fg-5pZ"/>
+                    <constraint firstItem="PlQ-zw-HE1" firstAttribute="top" secondItem="YNW-9g-pyu" secondAttribute="top" id="u5I-m2-Q4E"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="edC-YU-zDY"/>
+                        <exclude reference="BTp-EW-yFP"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="commentLabel" destination="PFa-q8-mWi" id="zqa-86-Gjx"/>
+                <outlet property="dingBtn" destination="8Tc-QD-A7h" id="vOI-2X-tSU"/>
+                <outlet property="dingCountLabel" destination="CL1-ua-Zx8" id="IZd-14-eqj"/>
+                <outlet property="iconBtn" destination="YNW-9g-pyu" id="vmo-aJ-vGE"/>
+                <outlet property="sexImageView" destination="PlQ-zw-HE1" id="T3w-hF-T1j"/>
+                <outlet property="usernameLabel" destination="8nP-Dn-bbh" id="7DH-AW-Hh6"/>
+            </connections>
+            <point key="canvasLocation" x="264" y="323"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Action_Female" width="100" height="100"/>
+        <image name="mainCellDing" width="20" height="20"/>
+        <image name="mainCellDingClick" width="20" height="20"/>
+    </resources>
+</document>
